@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title  %} Home Page{% endblock title  %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static "blog/includes/post_preview.css" %}">
+    <link rel="stylesheet" href="{% static "blog/home_page.css" %}"> 
+{% endblock styles %}
+
+
+{% block content %}
+    <section id="welcome">
+        <header>
+            <img src="{% static "blog/images/Picture1.jpg" %}" alt="Peace - author of this blog" /> 
+            <h2>Peace's Blog</h2>
+        </header>
+        <p> Hi, My Name is Adeniyi Peace, a tech enthusiac and an Engineering graduate</p>
+    </section>
+        
+    <section id="latest-posts">
+        <h2>
+            My Latest Post
+        </h2>
+        <ul>
+            {% include "blog/includes/post_preview.html" %}
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>what i do</h2>
+        <p>i love programing and exploring new tech in general</p>
+        <p>ny goal is to make money, and if you can help with that, it will be appreciated</p>
+    </section>
+    
+{% endblock content %}

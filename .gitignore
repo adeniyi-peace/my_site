@@ -1,0 +1,4 @@
+django_my_site
+.ebextension
+staticfiles
+__pycache__
