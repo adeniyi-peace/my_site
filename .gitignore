@@ -2,3 +2,5 @@ django_my_site
 .ebextension
 staticfiles
 __pycache__
+venv
+.env
